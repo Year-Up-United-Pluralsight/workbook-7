@@ -1,4 +1,4 @@
-SELECT DISTINCT
+SELECT TABLES
 companyname, Country
 from
 customers
