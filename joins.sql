@@ -45,8 +45,8 @@ FROM Orders
 JOIN `Order Details`
 	ON Orders.OrderID = `Order Details`.OrderID
 
--- Connects Orders to Products via OrderID
-WHERE `Order Details`.ProductID =  (SELECT ProductID
-									FROM Products
-									WHERE ProductName = 'Sasquatch Ale');
+-- Specifics ProductID of "Sasquatch Ale"
+WHERE ProductID =  (SELECT ProductID
+					FROM Products
+					WHERE ProductName = 'Sasquatch Ale');
 
