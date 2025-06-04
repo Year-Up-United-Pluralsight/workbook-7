@@ -43,7 +43,7 @@ FROM Categories;
 -- Gets CategoryID of Seafood category
 SELECT CategoryID
 FROM Categories
-WHERE CategoryName = "Seafood";
+WHERE CategoryName = 'Seafood';
 
 -- Question 10
 SELECT ProductName
@@ -77,7 +77,7 @@ FROM Suppliers;
 -- Gets the supplier ID of the company named "Tokyo Traders"
 SELECT SupplierID
 FROM Suppliers
-WHERE CompanyName = "Tokyo Traders";
+WHERE CompanyName = 'Tokyo Traders';
 
 -- Filters products using that supplier ID (4)
 SELECT ProductName, SupplierID
